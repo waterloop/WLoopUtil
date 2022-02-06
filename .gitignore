@@ -1,0 +1,25 @@
+*/bin/
+bin/
+
+*/build/
+build/
+
+*/Debug/
+Debug/
+
+*/env/
+env/
+
+*/venv/
+venv/
+
+__pycache__
+
+# HIL logging files
+*/tmp/
+
+# macos lol
+*/.DS_Store
+.DS_Store
+
+
