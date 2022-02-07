@@ -1,13 +1,15 @@
 #include "rtos_example.hpp"
 
 MeasurementsThread::MeasurementsThread() {
-    // I know this is bad btw
-    this->thread = new RTOSThread(
+    // Now this seems stupid
+    RTOSThread classThread(
         "Measurements thread",
         1024*5,
         osPriorityAboveNormal,
         this->measurementsRun
     );
+
+    this->thread = &classThread;
 }
 
 void MeasurementsThread::measurementsRun(void* args) {
