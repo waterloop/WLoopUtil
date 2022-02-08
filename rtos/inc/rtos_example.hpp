@@ -5,6 +5,6 @@ class MeasurementsThread {
     public:
         MeasurementsThread();
     private:
-        RTOSThread* thread;
+        RTOSThread thread;
         static void measurementsRun(void *args);
 };
