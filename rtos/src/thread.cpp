@@ -14,3 +14,5 @@ RTOSThread::RTOSThread(char* name, uint32_t stack_size, osPriority_t priority, v
     );
 
 }
+
+RTOSThread::RTOSThread() {}
