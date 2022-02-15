@@ -1,6 +1,6 @@
 #include "thread.hpp"
 
-RTOSThread::RTOSThread(char* name, uint32_t stack_size, osPriority_t priority, void callback(void* arg)) {
+RTOSThread::RTOSThread(char const * name, uint32_t stack_size, osPriority_t priority, void callback(void* arg)) {
     const osThreadAttr_t thread_attrs = {
         .name = name,
         .stack_size = stack_size,

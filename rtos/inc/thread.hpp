@@ -5,7 +5,7 @@
 class RTOSThread {
     public:
         RTOSThread();
-        RTOSThread(char* name, uint32_t stack_size, osPriority_t priority, void callback(void* arg));    
+        RTOSThread(char const * name, uint32_t stack_size, osPriority_t priority, void callback(void* arg));    
     private:
         osThreadId_t thread;
 };
