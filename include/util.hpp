@@ -5,7 +5,7 @@ extern "C" {
 #endif
 
 #ifdef RTOS
-    #include "../rtos/thread.h"
+    #include "../rtos/thread.hpp"
 #endif
 
 #ifdef __cplusplus
