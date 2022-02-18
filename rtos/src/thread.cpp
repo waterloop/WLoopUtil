@@ -16,3 +16,8 @@ RTOSThread::RTOSThread(char const * name, uint32_t stack_size, osPriority_t prio
 }
 
 RTOSThread::RTOSThread() {}
+
+osThreadId_t RTOSThread::getThreadId() {
+    return this->thread;
+}
+
