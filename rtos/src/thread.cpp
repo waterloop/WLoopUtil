@@ -17,6 +17,18 @@ RTOSThread::RTOSThread(char const * name, uint32_t stack_size, osPriority_t prio
 
 RTOSThread::RTOSThread() {}
 
+void RTOSThread::suspendThread() {
+    osThreadSuspend(this->thread);
+}
+
+void RTOSThread::resumeThread() {
+    osThreadResume(this->thread);
+}
+
+uint32_t RTOSThread::setFlag(uint32_t flag) {
+    osThreadFlagsSet(this)
+}
+
 osThreadId_t RTOSThread::getThreadId() {
     return this->thread;
 }
