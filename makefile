@@ -14,5 +14,10 @@ motor_controller:
 		BUILD_DIR=$(BUILD_DIR) \
 		BOARD_VARS="motor_controller.mk"
 
+pressure_sensor:
+	make -f main.mk \
+		BUILD_DIR=$(BUILD_DIR) \
+		BOARD_VARS="pressure_sensor.mk"
+
 clean:
 	rm -rf $(BUILD_DIR)
