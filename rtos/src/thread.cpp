@@ -26,7 +26,7 @@ void RTOSThread::resumeThread() {
 }
 
 uint32_t RTOSThread::setFlag(uint32_t flag) {
-    osThreadFlagsSet(this)
+    return osThreadFlagsSet(this, flag);
 }
 
 osThreadId_t RTOSThread::getThreadId() {
