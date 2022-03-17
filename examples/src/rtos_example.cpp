@@ -15,7 +15,7 @@ void ExampleThread::init() {
     this->create();
 }
 void ExampleThread::_run_wrapper(void* this_) {
-    ((ExampleThread*)this_)->_run();
+    ((ExampleThread*)this_)->run();
 }
 
 void ExampleThread::run() {
