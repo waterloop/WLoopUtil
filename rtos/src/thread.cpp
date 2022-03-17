@@ -18,7 +18,7 @@ void RTOSThread::create() {
         .stack_size = this->stack_size,
         .priority = this->priority
     };
-    this->thread_ = osThreadNew(this->callback, (void*)this, &thread_attrs);
+    this->thread_ = osThreadNew(this->callback, this->callback_arg, &thread_attrs);
 }
 
 void RTOSThread::suspendThread() {
